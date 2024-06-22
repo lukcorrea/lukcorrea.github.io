@@ -17,15 +17,20 @@
 </head>
 <body>
     <div class="section">
-        <h2>Baixe a demo agora! (22-06-2024)</h2>
+        <h2>Lançamento 22-02-2024</h2>
         <p>Você pode baixar a demo <a href="https://www.google.com.br">clicando aqui</a>.</p>
-        <br>
         <h2>Instalação:</h2>
         <p>1) Extraia o arquivo .rar em qualquer lugar do seu computador.</p>
         <p>2) Abra o arquivo <span style="color: blue;">Crash Twinsanity Infinity.exe</span> e divirta-se!</p>
         <h2>Controles:</h2>
         <p>Como essa é uma versão em desenvolvimento, não é possível alterar os controles ainda.<br>
-        Por enquanto, o jogo está programado para esses botões:</p>
+        Por enquanto, o jogo está programado para esses botões:<br>
+        W A S D = Movement
+        Space = Jump / Skip 
+        Shift / Right Mouse Click = Slide (Dash) / Belly Flop
+        Esc = Pause Menu
+        E = Item Menu
+</p>   
     </div>
 </body>
 </html>
