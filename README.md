@@ -12,7 +12,7 @@
             padding: 0;
         }
         .header {
-            background-color: #6200ee;
+            background-color: transparent; /* Alteração: Remover cor de fundo */
             color: white;
             padding: 10px 20px;
             text-align: center;
@@ -56,6 +56,10 @@
         }
         body.dark-mode .highlight {
             color: #bb86fc;
+        }
+        /* Remover sublinhado dos links */
+        .section a {
+            text-decoration: none;
         }
     </style>
 </head>
