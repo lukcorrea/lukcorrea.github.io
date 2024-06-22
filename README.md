@@ -19,7 +19,7 @@
         .section h2 {
             margin-top: 0;
         }
-        /* Dark mode styles */
+        /* Estilos para o modo escuro */
         body.dark-mode {
             background-color: #121212;
             color: #e0e0e0;
@@ -63,7 +63,14 @@
     </div>
     <script>
         function toggleDarkMode() {
-            document.body.classList.toggle('dark-mode');
+            var body = document.body;
+            var button = document.querySelector('.toggle-button');
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                button.textContent = 'Modo Claro';
+            } else {
+                button.textContent = 'Modo Escuro';
+            }
         }
     </script>
 </body>
