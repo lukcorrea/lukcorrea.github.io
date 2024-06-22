@@ -41,10 +41,22 @@
             border-radius: 5px;
             cursor: pointer;
         }
+        .credits-button {
+            position: fixed;
+            top: 10px;
+            right: 150px;
+            padding: 10px 20px;
+            background-color: #6200ee;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <button class="toggle-button" onclick="toggleDarkMode()">Modo Escuro</button>
+    <button class="credits-button" onclick="showCredits()">Créditos</button>
     <div class="section">
         <h2>Lançamento 18-07-2024</h2>
         <p>Você pode baixar a demo <a href="https://www.google.com.br">clicando aqui</a>.</p>
@@ -62,7 +74,45 @@
     </div>
     <script>
         function toggleDarkMode() {
-            document.body.classList.toggle('dark-mode');
+            var body = document.body;
+            body.classList.toggle('dark-mode');
+            var modeButton = document.querySelector('.toggle-button');
+            if (body.classList.contains('dark-mode')) {
+                modeButton.textContent = 'Modo Claro';
+            } else {
+                modeButton.textContent = 'Modo Escuro';
+            }
+        }
+
+        function showCredits() {
+            alert('Direção, Programadores & Modeladores: 
+            - LukeCreater\n
+            - MindFlayer\n\n
+            Animadores:
+            - LudwigFloko\n\n
+
+            Artistas:\n
+            - Jackie!\n
+            - RafaelCost\n\n
+
+            Beta Testers:
+            - EduGameplays\n
+            - Soldier\n\n
+
+            Divulgador:\n
+            - Bruno W\n\n
+            Agradecimentos Especiais:\n
+            - Paul Gardner\n
+            - James Clark\n
+            - Nicola Cavalla\n
+            - Alex Waterston\n
+            - Neo Kesha\n
+            - Smartkin\n
+            - Lucas Parise\n
+            - Tio Gordo\n
+            - CrystalFissure\n
+            - KingGamesMC\n
+            ');
         }
     </script>
 </body>
