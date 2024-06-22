@@ -7,6 +7,7 @@
             background-color: white;
             color: black;
             transition: background-color 0.3s, color 0.3s;
+            font-family: Arial, sans-serif; /* Adicionei uma fonte padrão para melhor legibilidade */
         }
         .section {
             border: 1px solid #ccc;
@@ -30,26 +31,48 @@
         body.dark-mode a {
             color: #bb86fc;
         }
-        .toggle-button {
+        .toggle-button, .credits-button {
             position: fixed;
             top: 10px;
-            right: 10px;
             padding: 10px 20px;
             background-color: #6200ee;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            z-index: 1000; /* Aumentei o z-index para garantir que os botões estejam acima de outros elementos */
+        }
+        .toggle-button {
+            right: 10px;
         }
         .credits-button {
-            position: fixed;
-            top: 10px;
             right: 150px;
-            padding: 10px 20px;
-            background-color: #6200ee;
-            color: white;
-            border: none;
-            border-radius: 5px;
+        }
+        .credits-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 999; /* Ajustei o z-index para garantir que a sobreposição esteja abaixo dos botões */
+        }
+        .credits-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 80%;
+            max-height: 80%;
+            overflow-y: auto;
+            position: relative;
+        }
+        .credits-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
             cursor: pointer;
         }
     </style>
@@ -72,6 +95,39 @@
         Esc = Menu de Pausa<br>
         E = Menu de Itens<br>
     </div>
+
+    <!-- Estrutura da janela de créditos -->
+    <div class="credits-overlay" id="creditsOverlay">
+        <div class="credits-content">
+            <span class="credits-close" onclick="hideCredits()">X</span>
+            <h2>Créditos</h2>
+            <p><strong>Direção, Programadores & Modeladores:</strong><br>
+            - LukeCreater<br>
+            - MindFlayer</p>
+            <p><strong>Animadores:</strong><br>
+            - LudwigFloko</p>
+            <p><strong>Artistas:</strong><br>
+            - Jackie!<br>
+            - RafaelCost</p>
+            <p><strong>Beta Testers:</strong><br>
+            - EduGameplays<br>
+            - Soldier</p>
+            <p><strong>Divulgador:</strong><br>
+            - Bruno W</p>
+            <p><strong>Agradecimentos Especiais:</strong><br>
+            - Paul Gardner<br>
+            - James Clark<br>
+            - Nicola Cavalla<br>
+            - Alex Waterston<br>
+            - Neo Kesha<br>
+            - Smartkin<br>
+            - Lucas Parise<br>
+            - Tio Gordo<br>
+            - CrystalFissure<br>
+            - KingGamesMC</p>
+        </div>
+    </div>
+
     <script>
         function toggleDarkMode() {
             var body = document.body;
@@ -85,34 +141,13 @@
         }
 
         function showCredits() {
-            alert('Direção, Programadores & Modeladores: 
-            - LukeCreater\n
-            - MindFlayer\n\n
-            Animadores:
-            - LudwigFloko\n\n
+            var creditsOverlay = document.getElementById('creditsOverlay');
+            creditsOverlay.style.display = 'flex'; // Mostra a sobreposição de créditos
+        }
 
-            Artistas:\n
-            - Jackie!\n
-            - RafaelCost\n\n
-
-            Beta Testers:
-            - EduGameplays\n
-            - Soldier\n\n
-
-            Divulgador:\n
-            - Bruno W\n\n
-            Agradecimentos Especiais:\n
-            - Paul Gardner\n
-            - James Clark\n
-            - Nicola Cavalla\n
-            - Alex Waterston\n
-            - Neo Kesha\n
-            - Smartkin\n
-            - Lucas Parise\n
-            - Tio Gordo\n
-            - CrystalFissure\n
-            - KingGamesMC\n
-            ');
+        function hideCredits() {
+            var creditsOverlay = document.getElementById('creditsOverlay');
+            creditsOverlay.style.display = 'none'; // Esconde a sobreposição de créditos
         }
     </script>
 </body>
