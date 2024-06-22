@@ -17,7 +17,7 @@
 </head>
 <body>
     <div class="section">
-        <h2>Lançamento 22-02-2024</h2>
+        <h2>Lançamento 18-07-2024</h2>
         <p>Você pode baixar a demo <a href="https://www.google.com.br">clicando aqui</a>.</p>
         <h2>Instalação:</h2>
         <p>1) Extraia o arquivo .rar em qualquer lugar do seu computador.</p>
@@ -25,11 +25,11 @@
         <h2>Controles:</h2>
         <p>Como essa é uma versão em desenvolvimento, não é possível alterar os controles ainda.<br>
         Por enquanto, o jogo está programado para esses botões:<br>
-        W A S D = Movement
-        Space = Jump / Skip 
-        Shift / Right Mouse Click = Slide (Dash) / Belly Flop
-        Esc = Pause Menu
-        E = Item Menu
+        W A S D = Movement<br>
+        Space = Jump / Skip <br>
+        Shift / Right Mouse Click = Slide (Dash) / Belly Flop<br>
+        Esc = Pause Menu<br>
+        E = Item Menu<br>
 </p>   
     </div>
 </body>
