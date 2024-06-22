@@ -23,7 +23,6 @@
         <h2>Instalação:</h2>
         <p>1) Extraia o arquivo .rar em qualquer lugar do seu computador.</p>
         <p>2) Abra o arquivo <span style="color: blue;">Crash Twinsanity Infinity.exe</span> e divirta-se!</p>
-        <br></p>
         <h2>Controles:</h2>
         <p>Como essa é uma versão em desenvolvimento, não é possível alterar os controles ainda.<br>
         Por enquanto, o jogo está programado para esses botões:</p>
