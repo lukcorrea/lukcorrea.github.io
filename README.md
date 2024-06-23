@@ -82,7 +82,7 @@
     <button class="credits-button" onclick="showCredits()">Créditos</button>
     <div class="section">
         <h2>Lançamento 18-07-2024</h2>
-        <p>Você pode baixar a demo <a href="https://www.google.com.br">clicando aqui</a>.</p>
+        <p>Você pode baixar a demo <a href="https://github.com/lukcorrea/TwinsanityInfinity/releases/download/v0.1-pre-beta/InfinityBuild.rar">clicando aqui</a>.</p>
         <h2>Instalação:</h2>
         <p>1) Extraia o arquivo .rar em qualquer lugar do seu computador.</p>
         <p>2) Abra o arquivo <span style="color: blue;">Crash Twinsanity Infinity.exe</span> e divirta-se!</p>
