@@ -107,8 +107,10 @@
             - MindFlayer</p>
             <p><strong>Animadores:</strong><br>
             - LudwigFloko</p>
+            - GuiBelcks</p>
             <p><strong>Artistas:</strong><br>
             - Jackie!<br>
+            - Alexandra SSStylish</p>
             - RafaelCost</p>
             <p><strong>Beta Testers:</strong><br>
             - EduGameplays<br>
