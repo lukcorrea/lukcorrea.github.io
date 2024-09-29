@@ -82,7 +82,7 @@
     <button class="credits-button" onclick="showCredits()">Créditos</button>
     <div class="section">
         <h2>Lançamento da Beta Experimental!</h2>
-        <p>Você pode baixar a demo <a href="https://github.com/lukcorrea/lukcorrea.github.io/releases/download/Prerelease/infinity.rar">clicando aqui!</a>.</p>
+        <p>Você pode baixar a demo <a href="[https://github.com/lukcorrea/lukcorrea.github.io/releases/download/Prerelease/infinity.rar](https://github.com/lukcorrea/lukcorrea.github.io/releases/download/Prerelease/infinity.rar)">clicando aqui!</a>.</p>
         <h2>Instalação:</h2>
         <p>1) Extraia o arquivo .rar em qualquer lugar do seu computador.</p>
         <p>2) Abra o arquivo <span style="color: blue;">Twinfinity.exe</span> e divirta-se!</p>
