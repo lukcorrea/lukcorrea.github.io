@@ -94,7 +94,7 @@
         Shift / Botão Direito do Mouse = Deslizar (Dash) / Barrigada<br>
         Esc = Menu de Pausa<br>
         I = Menu de Itens<br>
-        1, 2, 3, 4 = Checkpoint Teleport
+        1, 2, 3, 4 = Checkpoint Teleport!
     </div>
 
     <!-- Estrutura da janela de créditos -->
