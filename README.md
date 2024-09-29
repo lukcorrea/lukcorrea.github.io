@@ -85,7 +85,7 @@
         <p>Você pode baixar a demo <a href="https://github.com/lukcorrea/TwinsanityInfinity/releases/download/v0.2-pre-beta/InfinityBuild.rar">clicando aqui</a>.</p>
         <h2>Instalação:</h2>
         <p>1) Extraia o arquivo .rar em qualquer lugar do seu computador.</p>
-        <p>2) Abra o arquivo <span style="color: blue;">Crash Twinsanity Infinity.exe</span> e divirta-se!</p>
+        <p>2) Abra o arquivo <span style="color: blue;">Twinfinity.exe</span> e divirta-se!</p>
         <h2>Controles:</h2>
         <p>Como essa é uma versão em desenvolvimento, não é possível alterar os controles ainda.<br>
         Por enquanto, o jogo está programado para esses botões:</p>
