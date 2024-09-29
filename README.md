@@ -1,7 +1,7 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <title>Crash Twinsanity Infinity - Updates</title>
+    <title>Crash Twinsanity Infinity</title>
     <style>
         body {
             background-color: white;
@@ -81,7 +81,7 @@
     <button class="toggle-button" onclick="toggleDarkMode()">Modo Escuro</button>
     <button class="credits-button" onclick="showCredits()">Créditos</button>
     <div class="section">
-        <h2>Lançamento 18-07-2024</h2>
+        <h2>Lançamento da Beta Experimental!</h2>
         <p>Você pode baixar a demo <a href="https://github.com/lukcorrea/TwinsanityInfinity/releases/download/v0.2-pre-beta/InfinityBuild.rar">clicando aqui</a>.</p>
         <h2>Instalação:</h2>
         <p>1) Extraia o arquivo .rar em qualquer lugar do seu computador.</p>
@@ -93,7 +93,7 @@
         Espaço = Pular / Pular Cena <br>
         Shift / Botão Direito do Mouse = Deslizar (Dash) / Barrigada<br>
         Esc = Menu de Pausa<br>
-        E = Menu de Itens<br>
+        I = Menu de Itens<br>
     </div>
 
     <!-- Estrutura da janela de créditos -->
