@@ -106,7 +106,7 @@
             - LukeCreater<br>
             - MindFlayer</p>
             <p><strong>Animadores:</strong><br>
-            - LudwigFloko</p>
+            - LudwigFloko<br>
             - GuiBelcks</p>
             <p><strong>Artistas:</strong><br>
             - Jackie!<br>
