@@ -82,7 +82,12 @@
     <button class="credits-button" onclick="showCredits()">Créditos</button>
     <div class="section">
         <h2>Lançamento da Beta Experimental!</h2>
-        <p>Você pode baixar a demo <a href="http://github.com/lukcorrea/lukcorrea.github.io/releases/download/Prerelease/infinity.rar">clicando aqui!</a>.</p>
+        <p>Você pode baixar a demo <a href="http://github.com/lukcorrea/lukcorrea.github.io/releases/download/Prerelease/infinity.rar">clicando aqui!</a>.<br>
+        Essa versão tem bastante bug! Nós vamos lançar uma versão estável daqui a alguns dias, fique atento!<br>
+        <br>
+        Criadores do jogo: LukeCreater & MindFlayer<br>
+        Server do discord: https://discord.gg/buTy7a7982
+</p>
         <h2>Instalação:</h2>
         <p>1) Extraia o arquivo .rar em qualquer lugar do seu computador.</p>
         <p>2) Abra o arquivo <span style="color: blue;">Twinfinity.exe</span> e divirta-se!</p>
