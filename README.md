@@ -82,7 +82,7 @@
     <div class="section">
         <h2>Lançamento da Beta Experimental!</h2>
         <p>Baixe a versão de demonstração beta <a href="http://github.com/lukcorrea/lukcorrea.github.io/releases/download/Prerelease/infinity.rar">clicando aqui</a>!<br>
-        Essa versão tem bastante bug! Nós vamos lançar uma versão estável daqui a alguns dias, fique atento!<br>
+        Essa versão tem bastante bug. Iremos lançar uma versão estável daqui a alguns dias, fique atento!<br>
         <br>
         Criadores do jogo: <a href="https://www.youtube.com/@lukecreater">LukeCreater</a> & <a href="https://www.youtube.com/@CrashouCT">MindFlayer</a><br>
         Server do discord: <a href="https://discord.gg/buTy7a7982" target="_blank">Discord Server</a>
