@@ -7,7 +7,7 @@
             background-color: white;
             color: black;
             transition: background-color 0.3s, color 0.3s;
-            font-family: Arial, sans-serif; /* Adicionei uma fonte padrão para melhor legibilidade */
+            font-family: Arial, sans-serif;
         }
         .section {
             border: 1px solid #ccc;
@@ -19,7 +19,6 @@
         .section h2 {
             margin-top: 0;
         }
-        /* Dark mode styles */
         body.dark-mode {
             background-color: #121212;
             color: #e0e0e0;
@@ -40,7 +39,7 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            z-index: 1000; /* Aumentei o z-index para garantir que os botões estejam acima de outros elementos */
+            z-index: 1000;
         }
         .toggle-button {
             right: 10px;
@@ -58,7 +57,7 @@
             display: none;
             justify-content: center;
             align-items: center;
-            z-index: 999; /* Ajustei o z-index para garantir que a sobreposição esteja abaixo dos botões */
+            z-index: 999;
         }
         .credits-content {
             background-color: white;
@@ -86,8 +85,8 @@
         Essa versão tem bastante bug! Nós vamos lançar uma versão estável daqui a alguns dias, fique atento!<br>
         <br>
         Criadores do jogo: LukeCreater & MindFlayer<br>
-        Server do discord: https://discord.gg/buTy7a7982
-</p>
+        Server do discord: <a href="https://discord.gg/buTy7a7982" target="_blank">Discord Server</a>
+        </p>
         <h2>Instalação:</h2>
         <p>1) Extraia o arquivo .rar em qualquer lugar do seu computador.</p>
         <p>2) Abra o arquivo <span style="color: blue;">Twinfinity.exe</span> e divirta-se!</p>
@@ -102,7 +101,6 @@
         1, 2, 3, 4 = Checkpoint Teleport!
     </div>
 
-    <!-- Estrutura da janela de créditos -->
     <div class="credits-overlay" id="creditsOverlay">
         <div class="credits-content">
             <span class="credits-close" onclick="hideCredits()">X</span>
@@ -115,7 +113,7 @@
             - GuiBelcks</p>
             <p><strong>Artistas:</strong><br>
             - Jackie!<br>
-            - Alexandra SSStylish</p>
+            - Alexandra SSStylish<br>
             - RafaelCost</p>
             <p><strong>Beta Testers:</strong><br>
             - EduGameplays<br>
@@ -150,12 +148,12 @@
 
         function showCredits() {
             var creditsOverlay = document.getElementById('creditsOverlay');
-            creditsOverlay.style.display = 'flex'; // Mostra a sobreposição de créditos
+            creditsOverlay.style.display = 'flex';
         }
 
         function hideCredits() {
             var creditsOverlay = document.getElementById('creditsOverlay');
-            creditsOverlay.style.display = 'none'; // Esconde a sobreposição de créditos
+            creditsOverlay.style.display = 'none';
         }
     </script>
 </body>
