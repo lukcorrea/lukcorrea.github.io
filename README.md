@@ -7,12 +7,11 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #121212; /* Cor de fundo do modo escuro */
-            color: #e0e0e0; /* Cor do texto no modo escuro */
+            background-color: #121212;
+            color: #e0e0e0;
             transition: background-color 0.3s, color 0.3s;
         }
-        
-        /* Imagem de fundo desfocada */
+
         .background-image {
             position: fixed;
             top: 0;
@@ -22,48 +21,45 @@
             background-image: url('https://cdn.discordapp.com/attachments/1045728634993905807/1291776359294697564/image.png?ex=670153fc&is=6700027c&hm=5ac834d38f6fa14cd4d10cb8343f3c9abb5e62327dcbf839a10f9e4f95484a1e&');
             background-size: cover;
             background-position: center;
-            filter: blur(8px); /* Define o desfoque */
-            z-index: -1; /* Coloca a imagem atrás de todo o conteúdo */
+            filter: blur(8px);
+            z-index: -1;
         }
 
-        /* Conteúdo do site */
         .content {
             position: relative;
-            z-index: 1; /* Coloca o conteúdo acima da imagem de fundo */
+            z-index: 1;
             padding: 20px;
         }
 
         .section {
-            border: 1px solid #333; /* Borda mais escura para o modo escuro */
+            border: 1px solid #333;
             padding: 20px;
             margin: 20px 0;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
-            background-color: rgba(18, 18, 18, 0.8); /* Fundo semitransparente para o modo escuro */
+            background-color: rgba(18, 18, 18, 0.8);
         }
 
         .section h2 {
             margin-top: 0;
-            font-size: 1.8em; /* Aumenta o tamanho do título */
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Sombra leve */
-            color: #ffffff; /* Cor dos títulos no modo escuro */
+            font-size: 1.8em;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+            color: #ffffff;
         }
 
         .section p {
-            font-size: 1.1em; /* Aumenta o tamanho do parágrafo */
-            line-height: 1.6; /* Aumenta o espaçamento entre as linhas */
-            text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.1); /* Sombra leve no texto */
+            font-size: 1.1em;
+            line-height: 1.6;
+            text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.1);
         }
 
         a {
-            color: #bb86fc; /* Cor dos links no modo escuro */
+            color: #bb86fc;
         }
 
-        /* Botões fixos */
-        .credits-button {
+        .credits-button, .translate-button {
             position: fixed;
             top: 10px;
-            right: 10px;
             padding: 10px 20px;
             background-color: #6200ee;
             color: white;
@@ -73,7 +69,14 @@
             z-index: 1000;
         }
 
-        /* Overlay de créditos */
+        .credits-button {
+            right: 10px;
+        }
+
+        .translate-button {
+            right: 120px;
+        }
+
         .credits-overlay {
             position: fixed;
             top: 0;
@@ -112,6 +115,7 @@
     <!-- Conteúdo do site -->
     <div class="content">
         <button class="credits-button" onclick="showCredits()">Créditos</button>
+        <button class="translate-button" onclick="translatePage()">Traduzir para Inglês</button>
 
         <div class="section">
             <h2>Crash Twinsanity Infinity!</h2>
@@ -182,6 +186,10 @@
         function hideCredits() {
             var creditsOverlay = document.getElementById('creditsOverlay');
             creditsOverlay.style.display = 'none';
+        }
+
+        function translatePage() {
+            window.location.href = "https://translate.google.com/translate?hl=en&sl=pt&u=" + encodeURIComponent(window.location.href);
         }
     </script>
 </body>
