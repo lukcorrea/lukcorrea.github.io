@@ -114,14 +114,17 @@
         <button class="credits-button" onclick="showCredits()">Créditos</button>
 
         <div class="section">
-            <h2>Lançamento da Beta Experimental!</h2>
-            <p>Baixe a versão de demonstração beta 
-                <a href="http://github.com/lukcorrea/lukcorrea.github.io/releases/download/Prerelease/infinity.rar">clicando aqui</a>!<br>
-            Essa versão tem bastante bug. Iremos lançar uma versão estável daqui a alguns dias, fique atento!<br><br>
+            <h2>Crash Twinsanity Infinity!</h2>
+            <p> Essa versão tem bastante bug. Iremos lançar uma versão estável daqui a alguns dias, fique atento!<br><br>
             Criadores do jogo: <a href="https://www.youtube.com/@lukecreater">LukeCreater</a> & 
             <a href="https://www.youtube.com/@CrashouCT">MindFlayer</a><br>
             Server do discord: <a href="https://discord.gg/buTy7a7982" target="_blank">Discord Server</a></p>
             
+            <h2>Versões</h2>
+            <p>
+            Versão mais recente (v0.3): <a href="http://github.com/lukcorrea/lukcorrea.github.io/releases/download/Prerelease/infinity.rar">baixe aqui</a>!<br><br>
+            </p>
+            Beta Experimental (v0.1): <a href="http://github.com/lukcorrea/lukcorrea.github.io/releases/download/Prerelease/infinity.rar">baixe aqui</a>!<br>
             <h2>Instalação:</h2>
             <p>1) Extraia o arquivo .rar em qualquer lugar do seu computador.</p>
             <p>2) Abra o arquivo <span style="color: blue;">Twinfinity.exe</span> e divirta-se!</p>
