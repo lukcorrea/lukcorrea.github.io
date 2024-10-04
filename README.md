@@ -7,8 +7,8 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: white;
-            color: black;
+            background-color: #121212; /* Cor de fundo do modo escuro */
+            color: #e0e0e0; /* Cor do texto no modo escuro */
             transition: background-color 0.3s, color 0.3s;
         }
         
@@ -34,18 +34,19 @@
         }
 
         .section {
-            border: 1px solid #ccc;
+            border: 1px solid #333; /* Borda mais escura para o modo escuro */
             padding: 20px;
             margin: 20px 0;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            background-color: rgba(255, 255, 255, 0.8); /* Transparência leve */
+            box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+            background-color: rgba(18, 18, 18, 0.8); /* Fundo semitransparente para o modo escuro */
         }
 
         .section h2 {
             margin-top: 0;
             font-size: 1.8em; /* Aumenta o tamanho do título */
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Sombra leve */
+            color: #ffffff; /* Cor dos títulos no modo escuro */
         }
 
         .section p {
@@ -54,30 +55,15 @@
             text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.1); /* Sombra leve no texto */
         }
 
-        /* Modo Escuro */
-        body.dark-mode {
-            background-color: #121212;
-            color: #e0e0e0;
-        }
-
-        body.dark-mode .section {
-            border: 1px solid #333;
-            box-shadow: 0 2px 4px rgba(255,255,255,0.1);
-            background-color: rgba(18, 18, 18, 0.4);
-        }
-
-        body.dark-mode .section h2 {
-            color: #ffffff;
-        }
-
-        body.dark-mode a {
-            color: #bb86fc;
+        a {
+            color: #bb86fc; /* Cor dos links no modo escuro */
         }
 
         /* Botões fixos */
-        .toggle-button, .credits-button {
+        .credits-button {
             position: fixed;
             top: 10px;
+            right: 10px;
             padding: 10px 20px;
             background-color: #6200ee;
             color: white;
@@ -85,14 +71,6 @@
             border-radius: 5px;
             cursor: pointer;
             z-index: 1000;
-        }
-
-        .toggle-button {
-            right: 10px;
-        }
-
-        .credits-button {
-            right: 150px;
         }
 
         /* Overlay de créditos */
@@ -127,13 +105,12 @@
         }
     </style>
 </head>
-<body>
+<body class="dark-mode">
     <!-- Imagem de fundo desfocada -->
     <div class="background-image"></div>
 
     <!-- Conteúdo do site -->
     <div class="content">
-        <button class="toggle-button" onclick="toggleDarkMode()">Modo Escuro</button>
         <button class="credits-button" onclick="showCredits()">Créditos</button>
 
         <div class="section">
@@ -194,17 +171,6 @@
     </div>
 
     <script>
-        function toggleDarkMode() {
-            var body = document.body;
-            body.classList.toggle('dark-mode');
-            var modeButton = document.querySelector('.toggle-button');
-            if (body.classList.contains('dark-mode')) {
-                modeButton.textContent = 'Modo Claro';
-            } else {
-                modeButton.textContent = 'Modo Escuro';
-            }
-        }
-
         function showCredits() {
             var creditsOverlay = document.getElementById('creditsOverlay');
             creditsOverlay.style.display = 'flex';
