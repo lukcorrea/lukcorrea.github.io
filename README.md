@@ -44,9 +44,8 @@
 
         .section h2 {
             margin-top: 0;
-            font-weight: bold;
             font-size: 1.8em; /* Aumenta o tamanho do título */
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra leve */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Sombra leve */
         }
 
         .section p {
@@ -64,7 +63,7 @@
         body.dark-mode .section {
             border: 1px solid #333;
             box-shadow: 0 2px 4px rgba(255,255,255,0.1);
-            background-color: rgba(18, 18, 18, 0.8);
+            background-color: rgba(18, 18, 18, 0.4);
         }
 
         body.dark-mode .section h2 {
