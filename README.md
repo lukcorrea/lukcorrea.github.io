@@ -39,7 +39,7 @@
             margin: 20px 0;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            background-color: rgba(255, 255, 255, 0.9); /* Transparência leve */
+            background-color: rgba(255, 255, 255, 0.3); /* Transparência leve */
         }
 
         .section h2 {
