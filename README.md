@@ -4,6 +4,10 @@
     <title>Crash Twinsanity Infinity</title>
     <style>
         body {
+            background-image: url('[https://link-da-imagem-aqui](https://cdn.discordapp.com/attachments/1045728634993905807/1291776359294697564/image.png?ex=670153fc&is=6700027c&hm=5ac834d38f6fa14cd4d10cb8343f3c9abb5e62327dcbf839a10f9e4f95484a1e&)');
+            background-size: cover;
+            background-position: center;
+            filter: blur(5px);
             background-color: white;
             color: black;
             transition: background-color 0.3s, color 0.3s;
@@ -15,6 +19,8 @@
             margin: 20px 0;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px); /* Melhorando a legibilidade da seção */
+            background-color: rgba(255, 255, 255, 0.8); /* Seção semi-transparente */
         }
         .section h2 {
             margin-top: 0;
@@ -79,26 +85,27 @@
 <body>
     <button class="toggle-button" onclick="toggleDarkMode()">Modo Escuro</button>
     <button class="credits-button" onclick="showCredits()">Créditos</button>
+    
     <div class="section">
         <h2>Lançamento da Beta Experimental!</h2>
-        <p>Baixe a versão de demonstração beta <a href="http://github.com/lukcorrea/lukcorrea.github.io/releases/download/Prerelease/infinity.rar">clicando aqui</a>!<br>
-        Essa versão tem bastante bug. Iremos lançar uma versão estável daqui a alguns dias, fique atento!<br>
-        <br>
-        Criadores do jogo: <a href="https://www.youtube.com/@lukecreater">LukeCreater</a> & <a href="https://www.youtube.com/@CrashouCT">MindFlayer</a><br>
-        Server do discord: <a href="https://discord.gg/buTy7a7982" target="_blank">Discord Server</a>
-        </p>
+        <p>Baixe a versão de demonstração beta 
+            <a href="http://github.com/lukcorrea/lukcorrea.github.io/releases/download/Prerelease/infinity.rar">clicando aqui</a>!<br>
+        Essa versão tem bastante bug. Iremos lançar uma versão estável daqui a alguns dias, fique atento!<br><br>
+        Criadores do jogo: <a href="https://www.youtube.com/@lukecreater">LukeCreater</a> & 
+        <a href="https://www.youtube.com/@CrashouCT">MindFlayer</a><br>
+        Server do discord: <a href="https://discord.gg/buTy7a7982" target="_blank">Discord Server</a></p>
+        
         <h2>Instalação:</h2>
         <p>1) Extraia o arquivo .rar em qualquer lugar do seu computador.</p>
         <p>2) Abra o arquivo <span style="color: blue;">Twinfinity.exe</span> e divirta-se!</p>
+
         <h2>Controles:</h2>
-        <p>Como essa é uma versão em desenvolvimento, não é possível alterar os controles ainda.<br>
-        Por enquanto, o jogo está programado para esses botões:</p>
-        W A S D = Movimento<br>
-        Espaço = Pular / Pular Cena <br>
+        <p>W A S D = Movimento<br>
+        Espaço = Pular / Pular Cena<br>
         Shift / Botão Direito do Mouse = Deslizar (Dash) / Barrigada<br>
         Esc = Menu de Pausa<br>
         I = Menu de Itens<br>
-        1, 2, 3, 4 = Checkpoint Teleport!
+        1, 2, 3, 4 = Checkpoint Teleport!</p>
     </div>
 
     <div class="credits-overlay" id="creditsOverlay">
