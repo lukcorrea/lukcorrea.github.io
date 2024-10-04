@@ -39,11 +39,20 @@
             margin: 20px 0;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            background-color: rgba(255, 255, 255, 0.3); /* Transparência leve */
+            background-color: rgba(255, 255, 255, 0.8); /* Transparência leve */
         }
 
         .section h2 {
             margin-top: 0;
+            font-weight: bold;
+            font-size: 1.8em; /* Aumenta o tamanho do título */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra leve */
+        }
+
+        .section p {
+            font-size: 1.1em; /* Aumenta o tamanho do parágrafo */
+            line-height: 1.6; /* Aumenta o espaçamento entre as linhas */
+            text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.1); /* Sombra leve no texto */
         }
 
         /* Modo Escuro */
@@ -55,7 +64,11 @@
         body.dark-mode .section {
             border: 1px solid #333;
             box-shadow: 0 2px 4px rgba(255,255,255,0.1);
-            background-color: rgba(18, 18, 18, 0.9);
+            background-color: rgba(18, 18, 18, 0.8);
+        }
+
+        body.dark-mode .section h2 {
+            color: #ffffff;
         }
 
         body.dark-mode a {
