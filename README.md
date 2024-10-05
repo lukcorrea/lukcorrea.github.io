@@ -8,6 +8,7 @@
             padding: 0;
             font-family: Arial, sans-serif;
             background-color: #121212;
+            transform: scale(1.25);
             color: #e0e0e0;
             transition: background-color 0.3s, color 0.3s;
         }
