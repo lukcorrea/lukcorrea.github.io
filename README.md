@@ -126,8 +126,7 @@
             
             <h2>Versões</h2>
             <p>
-            Versão mais recente (v0.3): <a href="http://github.com/lukcorrea/lukcorrea.github.io/releases/download/Prerelease/infinity.rar">baixe aqui</a>!<br><br>
-            Beta Experimental (v0.1): <a href="http://github.com/lukcorrea/lukcorrea.github.io/releases/download/Prerelease/infinity.rar">baixe aqui</a>!<br>
+            Beta Experimental com bugs (v0.1): <a href="http://github.com/lukcorrea/lukcorrea.github.io/releases/download/Prerelease/infinity.rar">baixe aqui</a>!<br>
             </p>
             <h2>Instalação:</h2>
             <p>1) Extraia o arquivo .rar em qualquer lugar do seu computador.</p>
