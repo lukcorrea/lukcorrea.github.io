@@ -19,7 +19,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('https://cdn.discordapp.com/attachments/1045728634993905807/1291776359294697564/image.png?ex=670153fc&is=6700027c&hm=5ac834d38f6fa14cd4d10cb8343f3c9abb5e62327dcbf839a10f9e4f95484a1e&');
+            background-image: url('https://i.imgur.com/eNsHAwQ.png');
             background-size: cover;
             background-position: center;
             filter: blur(8px);
