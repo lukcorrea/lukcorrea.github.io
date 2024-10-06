@@ -127,7 +127,7 @@
             
             <h2>Versões</h2>
             <p>
-            Beta Experimental com bugs (v0.1): <a href="http://github.com/lukcorrea/lukcorrea.github.io/releases/download/Prerelease/infinity.rar">baixe aqui</a>!<br>
+            Early Beta (v0.3): <a href="https://github.com/lukcorrea/lukcorrea.github.io/releases/download/beta-3/infinity.rar">baixe aqui</a>!<br>
             Alpha Experimental (v0.09): <a href="https://github.com/lukcorrea/lukcorrea.github.io/releases/download/PrototypeBuild/Crash.Twinsanity.Infinity.zip">baixe aqui</a>!
             </p>
             <h2>Instalação:</h2>
