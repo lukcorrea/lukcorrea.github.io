@@ -22,7 +22,7 @@
             background-image: url('https://i.imgur.com/eNsHAwQ.png');
             background-size: cover;
             background-position: center;
-            filter: blur(8px);
+            filter: blur(5px);
             z-index: -1;
         }
 
