@@ -40,7 +40,7 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
             background-color: rgba(18, 18, 18, 0.8);
-            width: 70%; /* Define a largura do conteúdo de texto */
+            width: 65%; /* Define a largura do conteúdo de texto */
         }
 
         .section h2 {
@@ -59,7 +59,7 @@
         .gallery {
             display: flex;
             flex-direction: column;
-            width: 30%; /* Define a largura da galeria de imagens */
+            width: 35%; /* Define a largura da galeria de imagens */
             margin-left: 20px;
         }
 
@@ -69,6 +69,8 @@
             margin-bottom: 10px;
             cursor: pointer;
             border-radius: 8px;
+            border: 2px solid #e0e0e0;
+            box-sizing: border-box;
         }
 
         .gallery img:hover {
@@ -140,7 +142,7 @@
 
         <!-- Galeria de Imagens -->
         <div class="gallery">
-            <img src="https://via.placeholder.com/150" alt="Imagem 1" onclick="openOverlay(this)">
+            <img src="/mnt/data/image.png" alt="Imagem 1" onclick="openOverlay(this)">
             <img src="https://via.placeholder.com/150" alt="Imagem 2" onclick="openOverlay(this)">
             <img src="https://via.placeholder.com/150" alt="Imagem 3" onclick="openOverlay(this)">
         </div>
@@ -166,4 +168,6 @@
             var overlay = document.getElementById('imageOverlay');
             overlay.style.display = 'none';
         }
-    </
+    </script>
+</body>
+</html>
