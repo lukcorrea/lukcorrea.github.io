@@ -30,7 +30,6 @@
             position: relative;
             z-index: 1;
             padding: 20px;
-            display: flex; /* Organiza o layout em colunas */
         }
 
         .section {
@@ -40,7 +39,6 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
             background-color: rgba(18, 18, 18, 0.8);
-            width: 65%; /* Define a largura do conteúdo de texto */
         }
 
         .section h2 {
@@ -56,55 +54,58 @@
             text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.1);
         }
 
-        .gallery {
-            display: flex;
-            flex-direction: column;
-            width: 35%; /* Define a largura da galeria de imagens */
-            margin-left: 20px;
+        a {
+            color: #bb86fc;
         }
 
-        .gallery img {
-            width: 100%;
-            height: auto;
-            margin-bottom: 10px;
+        .credits-button, .translate-button {
+            position: fixed;
+            top: 10px;
+            padding: 10px 20px;
+            background-color: #6200ee;
+            color: white;
+            border: none;
+            border-radius: 5px;
             cursor: pointer;
-            border-radius: 8px;
-            border: 2px solid #e0e0e0;
-            box-sizing: border-box;
+            z-index: 1000;
         }
 
-        .gallery img:hover {
-            filter: brightness(0.8);
+        .credits-button {
+            right: 10px;
         }
 
-        .image-overlay {
+        .translate-button {
+            right: 120px;
+        }
+
+        .credits-overlay {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
+            background-color: rgba(0, 0, 0, 0.5);
             display: none;
             justify-content: center;
             align-items: center;
-            z-index: 1000;
+            z-index: 999;
         }
 
-        .image-overlay img {
-            max-width: 90%;
-            max-height: 90%;
+        .credits-content {
+            background-color: white;
+            padding: 20px;
             border-radius: 8px;
+            max-width: 80%;
+            max-height: 80%;
+            overflow-y: auto;
+            position: relative;
         }
 
-        .close-button {
+        .credits-close {
             position: absolute;
-            top: 20px;
-            right: 20px;
-            font-size: 24px;
-            color: white;
+            top: 10px;
+            right: 10px;
             cursor: pointer;
-            background: transparent;
-            border: none;
         }
     </style>
 </head>
@@ -112,8 +113,11 @@
     <!-- Imagem de fundo desfocada -->
     <div class="background-image"></div>
 
-    <!-- Conteúdo do site com layout em colunas -->
+    <!-- Conteúdo do site -->
     <div class="content">
+        <button class="credits-button" onclick="showCredits()">Créditos</button>
+        <button class="translate-button" onclick="translatePage()">Traduzir para Inglês</button>
+
         <div class="section">
             <h2>Crash Twinsanity Infinity!</h2>
             <p>Twinsanity Infinity é um projeto brasileiro de recriação do Crash Twinsanity (PS2)!<br><br>
@@ -126,7 +130,6 @@
             Early Beta (v0.3): <a href="https://github.com/lukcorrea/lukcorrea.github.io/releases/download/beta-3/infinity.rar">baixe aqui</a>!<br>
             Alpha Experimental (v0.09): <a href="https://github.com/lukcorrea/lukcorrea.github.io/releases/download/PrototypeBuild/Crash.Twinsanity.Infinity.zip">baixe aqui</a>!
             </p>
-
             <h2>Instalação:</h2>
             <p>1) Extraia o arquivo .rar em qualquer lugar do seu computador.</p>
             <p>2) Abra o arquivo <span style="color: aqua;">Twinfinity.exe</span> e divirta-se!</p>
@@ -139,34 +142,55 @@
             I = Menu de Itens<br>
             1, 2, 3, 4 = Checkpoint Teleport!</p>
         </div>
+    </div>
 
-        <!-- Galeria de Imagens -->
-        <div class="gallery">
-            <img src="/mnt/data/image.png" alt="Imagem 1" onclick="openOverlay(this)">
-            <img src="https://via.placeholder.com/150" alt="Imagem 2" onclick="openOverlay(this)">
-            <img src="https://via.placeholder.com/150" alt="Imagem 3" onclick="openOverlay(this)">
+    <!-- Overlay de Créditos -->
+    <div class="credits-overlay" id="creditsOverlay">
+        <div class="credits-content">
+            <span class="credits-close" onclick="hideCredits()">X</span>
+            <h2>Créditos</h2>
+            <p><strong>Direção, Programadores & Modeladores:</strong><br>
+            - LukeCreater<br>
+            - MindFlayer</p>
+            <p><strong>Animadores:</strong><br>
+            - LudwigFloko<br>
+            - GuiBelcks</p>
+            <p><strong>Artistas:</strong><br>
+            - Jackie!<br>
+            - Alexandra SSStylish<br>
+            - RafaelCost</p>
+            <p><strong>Beta Testers:</strong><br>
+            - EduGameplays<br>
+            - Soldier</p>
+            <p><strong>Divulgador:</strong><br>
+            - Bruno W</p>
+            <p><strong>Agradecimentos Especiais:</strong><br>
+            - Paul Gardner<br>
+            - James Clark<br>
+            - Nicola Cavalla<br>
+            - Alex Waterston<br>
+            - Neo Kesha<br>
+            - Smartkin<br>
+            - Lucas Parise<br>
+            - Tio Gordo<br>
+            - CrystalFissure<br>
+            - KingGamesMC</p>
         </div>
     </div>
 
-    <!-- Overlay de Imagem Grande -->
-    <div class="image-overlay" id="imageOverlay">
-        <img id="overlayImage" src="" alt="Imagem Grande">
-        <button class="close-button" onclick="closeOverlay()">X</button>
-    </div>
-
     <script>
-        // Função para abrir o overlay de imagem
-        function openOverlay(image) {
-            var overlay = document.getElementById('imageOverlay');
-            var overlayImage = document.getElementById('overlayImage');
-            overlayImage.src = image.src;
-            overlay.style.display = 'flex';
+        function showCredits() {
+            var creditsOverlay = document.getElementById('creditsOverlay');
+            creditsOverlay.style.display = 'flex';
         }
 
-        // Função para fechar o overlay de imagem
-        function closeOverlay() {
-            var overlay = document.getElementById('imageOverlay');
-            overlay.style.display = 'none';
+        function hideCredits() {
+            var creditsOverlay = document.getElementById('creditsOverlay');
+            creditsOverlay.style.display = 'none';
+        }
+
+        function translatePage() {
+            window.location.href = "https://translate.google.com/translate?hl=en&sl=pt&u=" + encodeURIComponent(window.location.href);
         }
     </script>
 </body>
