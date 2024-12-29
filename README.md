@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
@@ -35,12 +34,12 @@
         .content {
             position: relative;
             max-width: 900px;
-            width: 100%;
             padding: 30px;
             background-color: rgba(18, 18, 18, 0.85);
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
             backdrop-filter: blur(5px);
+            width: 100%;
         }
 
         /* Abas */
@@ -68,11 +67,8 @@
 
         .tab-content {
             display: none;
-            height: 550px; /* Tamanho fixo para todas as abas */
-            width: 100%; /* Largura fixa */
+            height: 400px; /* Tamanho fixo para todas as abas */
             overflow-y: auto; /* Permite rolagem se o conteúdo for maior que o tamanho */
-            padding: 20px;
-            box-sizing: border-box;
         }
 
         .tab-content.active {
