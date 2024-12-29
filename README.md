@@ -181,12 +181,13 @@
             <div class="section">
                 <h2>Versões Experimentais:</h2>
                 <p>
-                -- Lembre-se: É UMA BETA! Essas versões não representam a versão final. Vamos melhorar tudo com o tempo!<br>
-                Não nos mande mensagem pedindo para melhorar ou adicionar alguma coisa.<br><br>
-                -- Remember: THIS IS A BETA! These versions do not represent the final version. We will improve everything over time!<br>
-                Please do not send us messages asking to improve or add anything.<br><br>
-                Early Beta (v0.3): <a href="https://github.com/lukcorrea/lukcorrea.github.io/releases/download/beta-3/infinity.rar">baixe aqui</a>!<br>
-                Early Alpha (v0.09): <a href="https://github.com/lukcorrea/lukcorrea.github.io/releases/download/PrototypeBuild/Crash.Twinsanity.Infinity.zip">baixe aqui</a>!
+                -- Lembre-se: É UMA BETA! Essas versões não representam a versão final. Vamos melhorar 
+                tudo com o tempo! Não nos mande mensagem pedindo para melhorar ou adicionar alguma coisa.<br><br>
+                -- Remember: THIS IS A BETA! These versions do not represent the final version. We will improve
+                 everything over time! Please do not send us messages asking to improve or add anything.<br><br>
+                Early Beta (v0.4): Soon...
+                Early Beta (v0.3): <a href="https://github.com/lukcorrea/lukcorrea.github.io/releases/download/beta-3/infinity.rar">download</a>!<br>
+                Early Alpha (v0.09): <a href="https://github.com/lukcorrea/lukcorrea.github.io/releases/download/PrototypeBuild/Crash.Twinsanity.Infinity.zip">download</a>!
                 </p>
             </div>
         </div>
