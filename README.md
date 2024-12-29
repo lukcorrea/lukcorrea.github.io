@@ -181,44 +181,75 @@
             <div class="section">
                 <h2>Versões Experimentais:</h2>
                 <p>
-                -- Lembre-se: É UMA BETA! Essas versões não representam a versão final. Vamos melhorar 
+                -- Lembre-se: É UMA BETA! Essas versões não representam a versão final. Vamos melhorar<br>
                 tudo com o tempo! Não nos mande mensagem pedindo para melhorar ou adicionar alguma coisa.<br><br>
-                -- Remember: THIS IS A BETA! These versions do not represent the final version. We will improve
+                -- Remember: THIS IS A BETA! These versions do not represent the final version. We will <br>improve
                  everything over time! Please do not send us messages asking to improve or add anything.<br><br>
-                Early Beta (v0.4): Soon...
+                Early Beta (v0.4): Soon...<br>
                 Early Beta (v0.3): <a href="https://github.com/lukcorrea/lukcorrea.github.io/releases/download/beta-3/infinity.rar">download</a>!<br>
                 Early Alpha (v0.09): <a href="https://github.com/lukcorrea/lukcorrea.github.io/releases/download/PrototypeBuild/Crash.Twinsanity.Infinity.zip">download</a>!
-                </p>
-            </div>
-        </div>
-
-        <div id="credits" class="tab-content">
-            <div class="section">
-                <h2>Instalação:</h2>
-                <p>1) Extraia o arquivo .rar em qualquer lugar do seu computador.</p>
-                <p>2) Abra o arquivo <span style="color: aqua;">Twinfinity.exe</span> e divirta-se!</p>
-                <h2>Controles:</h2>
                 <p>W A S D = Movimento<br>
                 Espaço = Pular / Pular Cena<br>
                 Shift / Botão Direito do Mouse = Deslizar (Dash) / Barrigada<br>
                 Esc = Menu de Pausa<br>
                 I = Menu de Itens<br>
                 1, 2, 3, 4 = Checkpoint Teleport!</p>
+                </p>
             </div>
         </div>
-    </div>
 
-    <!-- Overlay de Créditos -->
-    <div class="credits-overlay" id="creditsOverlay">
-        <div class="credits-content">
-            <span class="credits-close" onclick="hideCredits()">×</span>
-            <h2>Créditos</h2>
-            <p><strong>Direção, Programadores & Modeladores:</strong><br>- LukeCreater<br>- MindFlayer</p>
-            <p><strong>Animadores:</strong><br>- LudwigFloko<br>- GuiBelcks</p>
-            <p><strong>Artistas:</strong><br>- Jackie!<br>- Alexandra SSStylish<br>- RafaelCost</p>
-            <p><strong>Beta Testers:</strong><br>- EduGameplays<br>- Soldier</p>
-            <p><strong>Divulgador:</strong><br>- Bruno W</p>
-            <p><strong>Agradecimentos Especiais:</strong><br>- Paul Gardner<br>- James Clark<br>- Nicola Cavalla<br>- Alex Waterston<br>- Neo Kesha<br>- Smartkin<br>- Lucas Parise<br>- Tio Gordo<br>- CrystalFissure<br>- KingGamesMC</p>
+        <div id="credits" class="tab-content">
+            <div class="section">
+                <h1>Créditos:</h1>
+				
+                <h3>- Direção | Programação | Modelagem -</h3>
+                LukeCreater<br>
+                MindFlayer<br>
+				
+				<h3>- Animações -</h3>
+                Ludwig Wa-Wa Floko<br>
+				
+				<h3>- Modelagem -</h3>
+				Gochi-Masu<br>
+
+				<h3>- Programação -</h3>
+				Nachin<br>
+
+				<h3>- Compositor -</h3>
+				Chicken_Chaser<br>
+				
+                <h3>- Artistas -</h3>
+				Jackie<br>
+				Cvnwct<br>
+				Alexandra Stylish<br>
+				Rafael Cost<br>
+				Autistazinha<br>
+				JV<br>
+                
+                <h3>- Dublagem -</h3>
+				Tinkas<br>
+				Kalfrin<br>
+				Otavio Sidney<br>
+				Larain<br>
+
+				<h3>- Beta Tester -</h3>
+				EduGameplays<br>
+				Soldier<br>
+
+				<h3>- Special Thanks -</h3>
+				Mathycreater<br>
+				Josouza<br>
+				Felipecorrea<br>
+				Crystal Fissure<br>
+				CaptainWenner<br>
+				James Clark<br>
+				Paul Gardner<br>
+				Nicola Cavalla<br>
+				Neo_Kesha<br>
+				Gabs Bandicoot<br>
+				Tio Gordo<br>
+				<br>
+            </div>
         </div>
     </div>
 
