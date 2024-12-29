@@ -67,7 +67,7 @@
 
         .tab-content {
             display: none;
-            height: 400px; /* Tamanho fixo para todas as abas */
+            height: 600px; /* Tamanho fixo para todas as abas */
             overflow-y: auto; /* Permite rolagem se o conteúdo for maior que o tamanho */
         }
 
