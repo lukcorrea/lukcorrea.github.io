@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
@@ -39,6 +40,40 @@
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
             backdrop-filter: blur(5px);
+            width: 100%;
+        }
+
+        /* Abas */
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 2px solid #333;
+            margin-bottom: 20px;
+        }
+
+        .tab-button {
+            background-color: transparent;
+            color: #e0e0e0;
+            border: none;
+            padding: 10px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .tab-button:hover {
+            background-color: #333;
+            color: #03dac5;
+        }
+
+        .tab-content {
+            display: none;
+            height: 900px; /* Tamanho fixo para todas as abas */
+            overflow-y: auto; /* Permite rolagem se o conteúdo for maior que o tamanho */
+        }
+
+        .tab-content.active {
+            display: block;
         }
 
         /* Estilo das seções */
@@ -75,25 +110,6 @@
         a:hover {
             color: #03dac5;
         }
-
-        /* Botões */
-        .credits-button, .translate-button {
-            position: fixed;
-            top: 10px;
-            padding: 10px 20px;
-            background-color: #6200ee;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
-        }
-        .credits-button:hover, .translate-button:hover {
-            background-color: #3700b3;
-            transform: scale(1.05);
-        }
-        .credits-button { right: 10px; }
-        .translate-button { right: 120px; }
 
         /* Overlay de créditos */
         .credits-overlay {
@@ -146,36 +162,49 @@
 
     <!-- Conteúdo do site -->
     <div class="content">
-        <button class="credits-button" onclick="showCredits()">Créditos</button>
-        <button class="translate-button" onclick="translatePage()">Traduzir para Inglês</button>
+        <div class="tabs">
+            <button class="tab-button" onclick="showTab('home')">Home</button>
+            <button class="tab-button" onclick="showTab('downloads')">Downloads</button>
+            <button class="tab-button" onclick="showTab('credits')">Créditos</button>
+        </div>
 
-        <div class="section">
-            <h2>Crash Twinsanity Infinity!</h2>
-            <p>Twinsanity Infinity é um projeto brasileiro de recriação do Crash Twinsanity (PS2)!<br><br>
-            Criadores do jogo: <a href="https://www.youtube.com/@lukecreater">LukeCreater</a> & 
-            <a href="https://www.youtube.com/@CrashouCT">MindFlayer</a><br>
-            Servidor do discord: <a href="https://discord.gg/buTy7a7982" target="_blank">entre aqui</a>!</p>
-            
-            <h2>Versões Experimentais:</h2>
-            <p>
-            -- Lembre-se: É UMA BETA! Essas versões não representam a versão final. Vamos melhorar tudo com o tempo!<br>
-            Não nos mande mensagem pedindo para melhorar ou adicionar alguma coisa.<br><br>
-            -- Remember: THIS IS A BETA! These versions do not represent the final version. We will improve everything over time!<br>
-            Please do not send us messages asking to improve or add anything.<br><br>
-            Early Beta (v0.3): <a href="https://github.com/lukcorrea/lukcorrea.github.io/releases/download/beta-3/infinity.rar">baixe aqui</a>!<br>
-            Early Alpha (v0.09): <a href="https://github.com/lukcorrea/lukcorrea.github.io/releases/download/PrototypeBuild/Crash.Twinsanity.Infinity.zip">baixe aqui</a>!
-            </p>
-            <h2>Instalação:</h2>
-            <p>1) Extraia o arquivo .rar em qualquer lugar do seu computador.</p>
-            <p>2) Abra o arquivo <span style="color: aqua;">Twinfinity.exe</span> e divirta-se!</p>
+        <div id="home" class="tab-content active">
+            <div class="section">
+                <h2>Crash Twinsanity Infinity!</h2>
+                <p>Twinsanity Infinity é um projeto brasileiro de recriação do Crash Twinsanity (PS2)!<br><br>
+                Criadores do jogo: <a href="https://www.youtube.com/@lukecreater">LukeCreater</a> & 
+                <a href="https://www.youtube.com/@CrashouCT">MindFlayer</a><br>
+                Servidor do discord: <a href="https://discord.gg/buTy7a7982" target="_blank">entre aqui</a>!</p>
+            </div>
+        </div>
 
-            <h2>Controles:</h2>
-            <p>W A S D = Movimento<br>
-            Espaço = Pular / Pular Cena<br>
-            Shift / Botão Direito do Mouse = Deslizar (Dash) / Barrigada<br>
-            Esc = Menu de Pausa<br>
-            I = Menu de Itens<br>
-            1, 2, 3, 4 = Checkpoint Teleport!</p>
+        <div id="downloads" class="tab-content">
+            <div class="section">
+                <h2>Versões Experimentais:</h2>
+                <p>
+                -- Lembre-se: É UMA BETA! Essas versões não representam a versão final. Vamos melhorar tudo com o tempo!<br>
+                Não nos mande mensagem pedindo para melhorar ou adicionar alguma coisa.<br><br>
+                -- Remember: THIS IS A BETA! These versions do not represent the final version. We will improve everything over time!<br>
+                Please do not send us messages asking to improve or add anything.<br><br>
+                Early Beta (v0.3): <a href="https://github.com/lukcorrea/lukcorrea.github.io/releases/download/beta-3/infinity.rar">baixe aqui</a>!<br>
+                Early Alpha (v0.09): <a href="https://github.com/lukcorrea/lukcorrea.github.io/releases/download/PrototypeBuild/Crash.Twinsanity.Infinity.zip">baixe aqui</a>!
+                </p>
+            </div>
+        </div>
+
+        <div id="credits" class="tab-content">
+            <div class="section">
+                <h2>Instalação:</h2>
+                <p>1) Extraia o arquivo .rar em qualquer lugar do seu computador.</p>
+                <p>2) Abra o arquivo <span style="color: aqua;">Twinfinity.exe</span> e divirta-se!</p>
+                <h2>Controles:</h2>
+                <p>W A S D = Movimento<br>
+                Espaço = Pular / Pular Cena<br>
+                Shift / Botão Direito do Mouse = Deslizar (Dash) / Barrigada<br>
+                Esc = Menu de Pausa<br>
+                I = Menu de Itens<br>
+                1, 2, 3, 4 = Checkpoint Teleport!</p>
+            </div>
         </div>
     </div>
 
@@ -194,18 +223,13 @@
     </div>
 
     <script>
-        function showCredits() {
-            var creditsOverlay = document.getElementById('creditsOverlay');
-            creditsOverlay.style.display = 'flex';
-        }
+        function showTab(tabName) {
+            var tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(function(tab) {
+                tab.classList.remove('active');
+            });
 
-        function hideCredits() {
-            var creditsOverlay = document.getElementById('creditsOverlay');
-            creditsOverlay.style.display = 'none';
-        }
-
-        function translatePage() {
-            window.location.href = "https://translate.google.com/translate?hl=en&sl=pt&u=" + encodeURIComponent(window.location.href);
+            document.getElementById(tabName).classList.add('active');
         }
     </script>
 </body>
